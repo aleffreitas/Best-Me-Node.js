@@ -847,7 +847,10 @@
 	- exemplo:
 	# HTML
 	<body>
-		<header>Topo</header>
+		<header>
+			<div>logo</div>
+			<div>menu</div>
+		</header>
 		<main>Conteúdo</main>
 		<aside>Infos adicionais</aside>
 		<footer>Rodapé</footer>
@@ -873,6 +876,16 @@
 	header {
 		grid-area: header;
 		background-color: gray;
+
+		---- usando flex junto com grid -----
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 8px;
+
+		-------------------------------------
+
 	}
 	main {
 		grid-area: main;
@@ -887,4 +900,25 @@
 		background-color: gray;
 	}
 
+-->
+
+<!--
+	# AGORA SIM, CORES
+
+	#Cores
+
+	## Tipos
+
+	* background-color (para caixas)
+	* color (para textos)
+	* border-color (para-caixas)
+	* outros...
+
+	## Valores
+
+	Podemos definir os valores por
+
+	* palavra-chave (blue, transparent)
+	* hexadecimal (#990011)
+	* funções: rgb, rgba, hsl, hsla
 -->
