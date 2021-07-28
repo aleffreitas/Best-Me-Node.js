@@ -1162,4 +1162,182 @@
 	}
 -->
 
+<!--
+	--------- DESAFIOS ----------
 
+	Header Menu Navigation
+	Crie o <header> de um site que contenha uma logo e um menu.
+	Um elemento deverá ficar ao lado do outro.
+	A logo que ficará na extrema esquerda e o menu ficará na extrema direita.
+	Os itens do menu ficarão um ao lado do outro, com um espaço de .8rem entre eles.
+	O último elemento do menu será um botão de contato e você poderá utilizar o seletor:last-child para estilizar.
+
+		<header>
+			<nav>
+				<a href="">LOGO</a>
+				<ul>
+					<li>HOME</li>
+					<li>ABOUT</li>
+					<li>SERVICES</li>
+					<li>TESTIMONIALS</li>
+					<li>CONTACT</li>
+				</ul>
+			</nav>
+		</header>
+
+		```CSS
+
+		*{
+			margin: 0;
+		}
+
+		header{
+			padding: 4rem;
+			background: lightgray;
+		}
+
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		ul {
+			display: flex;
+			list-style: none;
+			align-items: center;
+			gap: .8rem;
+		}
+
+		ul li: last-child {
+			background: black;
+			color: white;
+			padding: .8rem;
+		}
+
+
+	--------- DESAFIO 2 ----------
+
+	# Layout com 2 colunas
+
+	Crie um layout com 2 colunas, uma ao lado da outra.
+	A coluna da esquerda deverá ter 25% de tamanho e a coluna da direita deverá ocupar todo o espaço que sobra.
+	Faça uma separação de 1rem entre os elementos.
+
+		<div class="container">
+			<aside>Coluna esquerda</aside>
+			<main>Coluna direita</main>
+		</div>
+
+		```CSS
+
+		.container {
+			display: flex;
+			gap: 1rem;
+		}
+
+		aside, main {
+			border: 1px solid;
+			height: 95vh;
+		}
+
+		aside{
+			flex-basis: 25%;
+		}
+
+		main {
+			flex: 1;
+		}
+
+	
+	--------- DESAFIO 3 ----------
+
+	Crie uma galeria de fotos onde teremos 3 colunas e 9 fotos.
+	Deixe um espaço de .8rem entre os elementos da galeria.
+
+		<div class="gallery">
+			<head>
+				<style>
+					img {
+						width: 30%;
+						height: auto;
+					}
+
+					.gallery{
+						display: flex;
+						flex-wrap: wrap;
+						gap: .8rem;
+						justify-content: center;
+					}
+					
+				</style>
+			</head>
+
+			<img src="https://source.unsplash.com/random? id=132" alt="">
+			<img src="https://source.unsplash.com/random? id=122" alt="">
+			<img src="https://source.unsplash.com/random? id=123" alt="">
+			<img src="https://source.unsplash.com/random? id=142" alt="">
+			<img src="https://source.unsplash.com/random? id=152" alt="">
+			<img src="https://source.unsplash.com/random? id=162" alt="">
+			<img src="https://source.unsplash.com/random? id=12" alt="">
+			<img src="https://source.unsplash.com/random? id=172" alt="">
+			<img src="https://source.unsplash.com/random? id=181" alt="">	
+		</div>
+
+
+	--------- DESAFIO 4 ----------
+
+	Crie um botão que contenha um ícone (img) e um texto.
+	Coloque um espaço de .4rem entre os elementos.
+
+	<head>
+		<style>
+			button {
+				display: flex;
+				align-items: center;
+				line-height: center;
+				gap: .4rem;
+			}
+
+			button img {
+				width: 2rem;
+				height: 2rem;
+			}
+		</style>
+	</head>
+
+	<button>
+		<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGg0OHY0OEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0yMCAzM2wxMi05LTEyLTl2MTh6bTQtMjlDMTIuOTUgNCA0IDEyLjk1IDQgMjRzOC45NSAyMCAyMCAyMCAyMC04Ljk1IDIwLTIwUzM1LjA1IDQgMjQgNHptMCAzNmMtOC44MiAwLTE2LTcuMTgtMTYtMTZTMTUuMTggOCAyNCA4czE2IDcuMTggMTYgMTYtNy4xOCAxNi0xNiAxNnoiLz48L3N2Zz4=" alt="">
+		Play
+	</button>
+
+
+	--------- DESAFIO 5 ----------
+
+	Crie o <footer> de um site que contenha a data de criação do site.
+	Usando flex, alinha o elemento do footer bem ao meio.
+	Deixe uma altura de 8rem para o footer.
+	O footer deverá ficar no final da página.
+
+	<head>
+		<style>
+			*{margin: 0;}
+			body{
+				min-height: 100vh;
+				display: flex;
+			}
+
+			footer{
+				margin-top: auto;
+				background: gray;
+				color: white;
+				height: 8rem;
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		</style>
+	</head>
+	<footer>2021</footer>
+-->
